@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://formspree.io/f/mzzpqzbr" method="post">
+    <label for="nama">Nama</label>
+    <input type="text" name="nama">
+
+    <br>
+    <br>
+
+    <label for="email">Email</label>
+    <input type="email" name="email">
+
+    <br>
+    <br>
+
+    <label for="tanggal_lahir">Tanggal Lahir</label>
+    <input type="date" name="tanggal_lahir">
+
+    <br>
+    <br>
+
+    <label for="jenis_kelamin">Laki-Laki</label>
+    <input type="radio"  name="jenis_kelamin" value="Laki-laki"> 
+
+    <label for="jenis_kelamin">Perempuan</label>
+    <input type="radio"  name="jenis_kelamin" value="Perempuan"> 
+
+    <br>
+    <br>
+
+    <label for="kelas_diikuti">Kelas Diikuti</label>
+    <select name="kelas_diikuti" id="kelas_diikuti">
+        <option value="JavaScript">JavaScript</option>
+        <option value="Laravel">Laravel</option>
+        <option value="Python">Python</option>
+        <option value="C++">C++</option>
+    </select>
+
+    <br>
+    <br>
+
+    <label for="metode_pembayaran">Metode Pembayaran</label>
+    <select name="metode_pembayaran" id="metode_pembayaran">
+        <option value="Transfer Bank">Transfer Bank</option>
+        <option value="Kartu Kredit">Kartu Kredit</option>
+        <option value="E - Wallet">E - Wallet</option>
+    </select>
+
+    <br>
+    <br>
+
+    <label for="waktu_kelas">Waktu Kelas</label>
+    
+    <br>
+
+    <label for="waktu_kelas">pagi</label>
+    <input type="checkbox" name="waktu_kelas" id="waktu_kelas" value="pagi">
+    <label for="waktu_kelas">siang</label>
+    <input type="checkbox" name="waktu_kelas" id="waktu_kelas" value="siang">
+    <label for="waktu_kelas">malam</label>
+    <input type="checkbox" name="waktu_kelas" id="waktu_kelas" value="malam">
+
+    <br>
+    <br>
+
+    <label for="pengalaman_coding">Pengalaman Coding</label>
+    <br>
+    <textarea name="pengalaman_coding" id="pengalaman_coding" rows="10" cols="30"></textarea>
+
+    <br>
+    <br>
+
+    <input type="checkbox" id="setuju" name="setuju">
+    <label for="setuju">Saya setuju dengan syarat dan ketentuan</label>
+
+    <button type="submit" disabled id="btn-submit">Submit</button>
+    <button type="reset">Reset</button>
+
+
+    </form>
+
+    <script>
+        const setuju = document.getElementById('setuju');
+        const btnSubmit = document.getElementById('btn-submit')
+
+        setuju.addEventListener('change', function () {
+            if (setuju.checked) {
+                btnSubmit.disabled  = false;
+            } else {
+                btnSubmit.disabled  = true;
+            }
+        })
+    </script>
+</body>
+</html>

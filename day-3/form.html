@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://formspree.io/f/mzzpqzbr" method="post" enctype="multipart/form-data">
+        <label for="nama">Nama</label>
+        <input type="text" name="nama" placeholder="Masukkan Nama">
+
+        <br>
+        <br>
+
+        <label for="tanggal_lahir">Tanggal Lahir</label>
+        <input type="date" name="tanggal_lahir" placeholder="Masukkan tanggal lahir">
+
+        <br>
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Masukkan email">
+
+        <br>
+        <br>
+
+        <select name="jenis_kelamin" id="jenis_kelamin">
+            <option value="laki">Laki-Laki</option>
+            <option value="perempuan">Perempuan</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="alamat">Alamat</label>
+        <br>
+        <textarea name="alamat" id="alamat" rows="10" cols="30"></textarea>
+
+        <br>
+        <br>
+
+        <label for="metode_pembayaran">Metode Pembayaran</label>
+
+        <br>
+
+        <input type="radio" name="metode_pembayaran" value="transfer">
+        <label for="metode_pembayaran">Transfer</label>
+
+        <input type="radio" name="metode_pembayaran" value="transfer">
+        <label for="metode_pembayaran">Cash</label>
+
+        <br>
+        <br>
+
+        <label for="bukti_pembayaran">Bukti Pembayaran</label>
+        <input type="file" name="bukti_pembayaran" id="bukti_pembayaran">
+
+        <br>
+        <br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body {
+    height: 100vh;
+    background-image: url(bgbgbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bio {
+    font-weight: 400;
+    color: rgb(0, 0, 0, 0.6);
+}
+
+.itemlist {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    gap: 20px;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+a {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+a .items{
+    color: #000;
+    font-weight: 600;
+}
+
+a:hover {
+    transform: scale(1.02);
+    background-color: #75c0fd;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:768px) {
+    .itemlist {
+        width: 90%;
+    }
+}
